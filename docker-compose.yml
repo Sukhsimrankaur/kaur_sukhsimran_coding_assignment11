@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kaur_sukhsimran_coding_assignment11
+    ports:
+      - "7775:3000"
+    volumes:
+      - .:/kaur_sukhsimran_site
+      - /kaur_sukhsimran_site/node_modules
+    working_dir: /kaur_sukhsimran_site
+    command: npm start
