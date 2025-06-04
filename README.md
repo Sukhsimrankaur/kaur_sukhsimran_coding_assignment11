@@ -5,10 +5,15 @@ This project is a Dockerized React app that displays a simple webpage with a `<h
 The app is served inside an Nginx container, exposing port **7775** on localhost.
 
 ---
-## The folder structure
-- React app source code
-- Dockerfile for building and running the app
-- README.md - instruction file 
+##  Folder Structure
+
+- `src/` – React app source code  
+- `public/` – Static assets  
+- `Dockerfile` – For building and running the app  
+- `docker-compose.yml` – Optional: to run with Docker Compose  
+- `README.md` – Instructions
+
+--- 
 
 ## How to build and run
 - First you should have Docker installed and running on your system.
